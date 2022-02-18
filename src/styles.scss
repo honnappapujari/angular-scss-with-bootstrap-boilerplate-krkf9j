@@ -66,9 +66,48 @@ $filter: 280px;
 
 @import '~bootstrap/scss/bootstrap';
 
-.main-content {
-  width: calc(100% - $sidebar - $filter - $spacer);
-  height: calc(100% - $header - $footer - $breadcrumb - $spacer);
-  margin-left: calc($sidebar + $spacer);
-  margin-top: calc($header + $breadcrumb + $spacer);
+body {
+  overflow-x: hidden;
+}
+.master-main {
+  height: 100vh;
+  width: 100vw;
+  .sidebar {
+    width: $sidebar;
+    height: 100%;
+    background: $primary;
+    float: left;
+    display: inline-block;
+  }
+  .header {
+    width: calc(100% - #{$sidebar} - #{$spacer});
+    height: $header;
+    margin-left: calc(#{$sidebar} + #{$spacer} / 2);
+    background: $gray-600;
+  }
+  .breadcrumb-content {
+    width: calc(100% - #{$sidebar} - #{$spacer});
+    height: $breadcrumb;
+    margin-left: calc(#{$sidebar} + #{$spacer} / 2);
+    // margin-top: calc(#{$spacer});
+    background: $gray-300;
+    margin-top: calc(#{$spacer} / 2);
+  }
+  .main-content {
+    width: calc(100% - #{$sidebar} - #{$spacer});
+    height: calc(
+      100% - #{$header} - #{$footer} - #{$breadcrumb} - #{$spacer} - #{$spacer} /
+        2
+    );
+    margin-top: $spacer;
+    margin-left: calc(#{$sidebar} + #{$spacer} / 2);
+    background: $gray-400;
+  }
+  .footer {
+    width: calc(100% - #{$sidebar} - #{$spacer});
+    height: $footer;
+    margin-left: calc(#{$sidebar} + #{$spacer} / 2);
+    // margin-top: calc(#{$spacer});
+    background: $gray-600;
+  }
 }
