@@ -1,55 +1,60 @@
-<div class="container m-2">
+<div class="container m-l">
   <h4>Alerts</h4>
 
-  <div class="alert alert-primary" role="alert">
+  <div class="alert alert-primary mb-s" role="alert">
     A simple primary alert—check it out!
   </div>
-  <div class="alert alert-sisa" role="alert">
+  <div class="alert alert-sisa mb-s" role="alert">
     A simple Sisa alert—check it out!
   </div>
-  <div class="alert alert-secondary" role="alert">
+  <div class="alert alert-secondary mb-s" role="alert">
     A simple secondary alert—check it out!
   </div>
-  <div class="alert alert-danger" role="alert">
+  <div class="alert alert-danger mb-s" role="alert">
     A simple danger alert—check it out!
   </div>
-  <div class="alert alert-warning" role="alert">
+  <div class="alert alert-warning mb-s" role="alert">
     A simple warning alert—check it out!
   </div>
 </div>
+<div class="container m-l">
+  <h4 class="sisa-page-title mb-xs">Page Title</h4>
+  <h4 class="sisa-content-title mb-xs">Content Title</h4>
+  <h4 class="sisa-mini-title mb-xs">Mini Title</h4>
+</div>
 
-<div class="container m-2">
+<div class="container m-l">
   <h4>Badge</h4>
   <button type="button" class="btn btn-primary">
     Profile <span class="badge badge-light">9</span>
     <span class="sr-only">unread messages</span>
   </button>
   <br />
-  <span class="badge badge-primary m-1">Primary</span>
-  <span class="badge badge-secondary m-1">Secondary</span>
-  <span class="badge badge-sisa m-1">Sisa</span>
-  <span class="badge badge-danger m-1">Danger</span>
-  <span class="badge badge-warning m-1">Warning</span>
-  <span class="badge badge-info m-1">Info</span>
+  <span class="badge badge-primary ml-xs">Primary</span>
+  <span class="badge badge-secondary ml-xs">Secondary</span>
+  <span class="badge badge-sisa ml-xs">Sisa</span>
+  <span class="badge badge-danger ml-xs">Danger</span>
+  <span class="badge badge-warning ml-xs">Warning</span>
+  <span class="badge badge-info ml-xs">Info</span>
 </div>
 
-<div class="container m-2">
+<div class="container m-l">
   <h4>breadcrumb</h4>
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb mb-m">
       <li class="breadcrumb-item active" aria-current="page">Home</li>
     </ol>
   </nav>
 
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb mb-m">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
       <li class="breadcrumb-item active" aria-current="page">Library</li>
     </ol>
   </nav>
 
   <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
+    <ol class="breadcrumb mb-m">
       <li class="breadcrumb-item"><a href="#">Home</a></li>
       <li class="breadcrumb-item"><a href="#">Library</a></li>
       <li class="breadcrumb-item active" aria-current="page">Data</li>
@@ -57,19 +62,20 @@
   </nav>
 </div>
 
-<div class="container m-2">
+<div class="container m-l">
   <h4>Button</h4>
-  <button type="button" class="btn btn-primary m-1">Primary</button>
-  <button type="button" class="btn btn-secondary m-1">Secondary</button>
-  <button type="button" class="btn btn-success m-1">Success</button>
-  <button type="button" class="btn btn-danger m-1">Danger</button>
+  <button type="button" class="btn btn-primary ml-s">Primary</button>
+  <button type="button" class="btn btn-sisa ml-s">Secondary</button>
+  <button type="button" class="btn btn-secondary ml-s">Secondary</button>
+  <button type="button" class="btn btn-success ml-s">Success</button>
+  <button type="button" class="btn btn-danger ml-s">Danger</button>
 
-  <button type="button" class="btn btn-sisa m-1">SISA</button>
+  <button type="button" class="btn btn-sisa ml-s">SISA</button>
 
-  <button type="button" class="btn btn-link m-1">Link</button>
+  <button type="button" class="btn btn-link ml-s">Link</button>
 </div>
 
-<div class="container m-2">
+<div class="container m-l">
   <h4>Card</h4>
   <div class="row">
     <div class="col-sm-6">
@@ -99,7 +105,7 @@
   </div>
 </div>
 
-<div class="container m-2">
+<div class="container m-l">
   <h4>Accordian</h4>
   <div class="accordion" id="accordionExample">
     <div class="card">
@@ -187,7 +193,7 @@
   </div>
 </div>
 
-<div class="container m-2">
+<div class="container m-l">
   <form>
     <div class="form-row">
       <div class="col-md-6 mb-3">
@@ -256,7 +262,7 @@
   </form>
 </div>
 
-<div class="container m-2">
+<div class="container m-l">
   <div class="progress" style="height: 1px;">
     <div
       class="progress-bar"
@@ -279,7 +285,7 @@
   </div>
 </div>
 
-<div class="container m-2">
+<div class="container m-l">
   <nav aria-label="Page navigation example">
     <ul class="pagination justify-content-end">
       <li class="page-item disabled">
@@ -296,9 +302,19 @@
 </div>
 
 <div class="master-main">
-  <div class="sidebar"></div>
-  <div class="header"></div>
-  <div class="breadcrumb-content"></div>
-  <div class="main-content"></div>
-  <div class="footer"></div>
+  <div class="sidebar">
+    <p>Sidebar</p>
+    <p></p>
+  </div>
+  <div class="header"><p>header</p></div>
+  <div class="breadcrumb-content"><p>Breadcrumb</p></div>
+  <div class="main-content">
+    <div class="sub-main-content">
+      <p>
+        Conent
+        <span> Scroll </span>
+      </p>
+    </div>
+  </div>
+  <div class="footer"><p>footer</p></div>
 </div>
